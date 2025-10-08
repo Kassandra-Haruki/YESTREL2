@@ -1,0 +1,37 @@
+mission "Yestrel unlock timer"
+	non-blocking
+	invisible
+	landing
+	source
+		near "Tarazed" 100
+	to offer
+		has "Kestrel Available: declined"
+	on offer
+		conversation
+			action
+				event "Yestrel development" 120
+			`You receive a message from Charles Atinoda, the ship designer at Tarazed Corporation: "Captain <last>, as you were involved in the development of the Kestrel, we have decided to inform you that we are currently developing a variant of the Kestrel with every possible upgrade. Stay tuned."`
+				decline
+
+event "Yestrel development"
+	set "Yestrel available"
+	shipyard "Yestrel"
+		"Yestrel"
+	planet Wayfarer
+		add shipyard "Yestrel"
+
+mission "Yestrel unlock"
+	non-blocking
+	invisible
+	landing
+	source
+		near "Tarazed" 100
+	to offer
+		has "Yestrel unlock timer: declined"
+		has "Yestrel available"
+	destination "Wayfarer"
+	on offer
+		conversation
+			scene "thumbnail/kestreloriginal"
+			`You receive a message from Charles Atinoda, the ship designer at Tarazed Corporation: "Captain <last>, we are pleased to inform you that the "Yestrel" - the Kestrel variant with all upgrades, we have just named it - is now available for sale here on Wayfarer."`
+				decline
