@@ -2,8 +2,8 @@ shipyard "developer"
 	"Yestrel"
 
 ship "Yestrel"
-	sprite "ship/kestreloriginal"
-	thumbnail "thumbnail/kestreloriginal"
+	sprite "ship/yestrel"
+	thumbnail "thumbnail/yestrel"
 	attributes
 		category "Heavy Warship"
 		"cost" 29400000
