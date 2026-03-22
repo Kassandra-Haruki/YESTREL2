@@ -2,6 +2,7 @@ name "Yestrel"
 version 2.0
 authors
     "Kassandra Haruki"
+    "kaiboy"
 tags
     ships
 about "Unlocks the Yestrel - an all-upgrades version of the Kestrel - 4 months after you unlock a variant. Also brings back the original weapons variant with 18 gun ports!"
