@@ -14,7 +14,7 @@ ship "Yestrel"
 		"mass" 2135
 		"drag" 19
 		"heat dissipation" .352
-		"fuel capacity" 500
+		"fuel capacity" 600
 		"cargo space" 120
 		"outfit space" 810
 		"weapon capacity" 430
